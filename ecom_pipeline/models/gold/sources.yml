@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: audit
+    database: ecom-intelligence-pipeline-001
+    schema: ecom_audit
+    description: "Audit tables populated by ingestion pipeline."
+
+    tables:
+      - name: file_upload_log
+      - name: pipeline_run_log
+      - name: data_quality_log
+      - name: rejected_records

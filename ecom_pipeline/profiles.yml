@@ -1,0 +1,13 @@
+ecom_pipeline:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: ecom-intelligence-pipeline-001
+      dataset: ecom_silver
+
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"
+
+      threads: 4
+      location: US

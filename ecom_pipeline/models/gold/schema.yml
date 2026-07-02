@@ -1,0 +1,218 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: "Date dimension. Grain: one row per date."
+    columns:
+      - name: date_key
+        tests:
+          - not_null
+          - unique
+
+  - name: dim_customer
+    description: "Customer dimension. Grain: one row per customer_id."
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_unique_id
+        tests:
+          - not_null
+
+  - name: dim_product
+    description: "Product dimension. Grain: one row per product_id."
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
+      - name: product_category_name
+        tests:
+          - not_null
+
+  - name: dim_seller
+    description: "Seller dimension. Grain: one row per seller_id."
+    columns:
+      - name: seller_id
+        tests:
+          - not_null
+          - unique
+
+  - name: fact_orders
+    description: "Order-level fact table. Grain: one row per order_id."
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customer')
+              field: customer_id
+
+      - name: order_purchase_date
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+
+      - name: order_status
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - created
+                - approved
+                - invoiced
+                - processing
+                - shipped
+                - delivered
+                - unavailable
+                - canceled
+
+      - name: gross_order_value
+        tests:
+          - non_negative
+
+      - name: total_payment_value
+        tests:
+          - non_negative
+
+  - name: fact_order_items
+    description: "Order item-level fact table. Grain: one row per order_id + order_item_id."
+    columns:
+      - name: order_item_key
+        tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('fact_orders')
+              field: order_id
+
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_product')
+              field: product_id
+
+      - name: seller_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_seller')
+              field: seller_id
+
+      - name: order_purchase_date
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key
+
+      - name: item_revenue
+        tests:
+          - not_null
+          - non_negative
+
+      - name: freight_value
+        tests:
+          - not_null
+          - non_negative
+
+      - name: gross_item_value
+        tests:
+          - not_null
+          - non_negative
+
+  - name: fact_payments
+    description: "Payment-level fact table. Grain: one row per order_id + payment_sequential."
+    columns:
+      - name: payment_key
+        tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('fact_orders')
+              field: order_id
+
+      - name: payment_type
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - credit_card
+                - boleto
+                - voucher
+                - debit_card
+                - not_defined
+
+      - name: payment_value
+        tests:
+          - not_null
+          - non_negative
+
+  - name: mart_sales_performance
+    description: "Daily sales performance by product category."
+    columns:
+      - name: order_purchase_date
+        tests:
+          - not_null
+
+      - name: product_category_name
+        tests:
+          - not_null
+
+      - name: gross_revenue
+        tests:
+          - non_negative
+
+  - name: mart_customer_rfm
+    description: "Customer RFM segmentation mart."
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_segment
+        tests:
+          - not_null
+
+      - name: monetary_value
+        tests:
+          - non_negative
+
+  - name: mart_product_performance
+    description: "Product performance mart."
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
+      - name: gross_revenue
+        tests:
+          - non_negative
+
+  - name: mart_pipeline_quality
+    description: "Pipeline quality and audit mart."
+    columns:
+      - name: run_date
+        tests:
+          - not_null

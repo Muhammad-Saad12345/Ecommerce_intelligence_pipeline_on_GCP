@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: ecom-intelligence-pipeline-001
+    schema: ecom_bronze
+    description: "Raw validated Bronze tables loaded by Cloud Run ingestion pipeline."
+
+    tables:
+      - name: bronze_orders
+        description: "Raw Olist orders data with ingestion metadata."
+
+      - name: bronze_customers
+        description: "Raw Olist customers data with ingestion metadata."
+
+      - name: bronze_order_items
+        description: "Raw Olist order items data with ingestion metadata."
+
+      - name: bronze_products
+        description: "Raw Olist products data with ingestion metadata."
+
+      - name: bronze_payments
+        description: "Raw Olist payments data with ingestion metadata."
+
+      - name: bronze_sellers
+        description: "Raw Olist sellers data with ingestion metadata."

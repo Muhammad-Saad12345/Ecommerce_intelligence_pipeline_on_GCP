@@ -1,0 +1,12 @@
+services:
+  dbt:
+    build: .
+    container_name: ecom_pipeline_dbt
+    working_dir: /dbt
+    volumes:
+      - .:/dbt:cached
+    entrypoint: ["/bin/sh", "-c"]
+    command: ["sleep infinity"]
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
