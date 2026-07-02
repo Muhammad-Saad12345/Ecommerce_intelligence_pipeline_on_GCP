@@ -43,7 +43,8 @@ This platform solves those problems by creating a scalable and automated cloud-n
 
 # 🏗 High-Level Architecture
 
-![Architecture Diagram](Architecture Diagram.png)
+![Architecture Diagram](Architecture%20Diagram.png)
+
 
 
 ---
