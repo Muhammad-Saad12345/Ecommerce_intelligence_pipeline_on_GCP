@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ecom-intelligence-pipeline-001",
+  "private_key_id": "bcb6d44afc36c330a987e57c7dcae0b308614c61",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCyAszDgsi/0Jc/\nCKC2qyDq8vAEEmma61BviC8I29v1LCy5/J1u/KuENvy2dO/7PzWoxH4lOK04JpzX\nkuKbenqIeiUqMAiYhDSesehj19rMyH2w3tzng4EuqI3km7MqYdFdahEEGMmu/nd5\nBD+tk0mgkk9j7cgwyu7qTDpSaTZE79aCZq2HISj/E0tft8JTe5rVB/6bIcfgYzvC\ndiOl+iAGvfkL8LqLXkrt9wJQC4n8oMCElb6ykNaSiWSY9GprxrzB3XU6PRbwxhN3\nBus8plZ90DJuJpZ2CPXY/3/DsRWsiKkqIJ4XKHikCCYDOwyxBmo3RG/f5Zx+xaJV\neV6ZopYdAgMBAAECggEAJNMic/GawN+QYkhRIujM4v3FvDno4dT7K09zV3RQEOyG\nBiWlld+sRaowZjhTqtidK6AWbnHGl76ZJJlsyngwYApQpOUR6iczUX8BUaJGT6XM\nJqo77aLNNw9EZz30dviMXLRD9+J+2nYm1gCUgb5d9Vs/FC+NAdcBTLPfPswoH2Nb\n3LBFOz/7xQVlM1dqdGrNXY4hkrSMnO/Bl7t02ZGAZ7GRp1neaHxVNdal5UDoFukd\nCzv8EY3/l09qWGx2SAn8ZfPOudbfugVb9nHWXxFLf0qkmf7v6kzrJ8TMpglOtzia\nCW9gEqOdOfZNTGAr2fTaATiQqGBmVolg22BOky/7EQKBgQDVn2wr3u7q2rPfiSx/\nNuv2DL+XYuy+9HGMBATz1dW6SvMtah5btsqeK9tex15sXKvvq06VfvcuRPb7+lrH\nttJ4Ob7mbt5fuQHSYLqnwj3jdxtnWt4wQnwIQ6JX8bXq97jRxfFmRvTaX3/dyfw2\ngmQmaOE1q4OO81Hp4FWBrJx8WQKBgQDVUt+7iBeGCYmcLq0Q1J0hQjxajW5icaw1\nKKCNVA7yhKCYiZhUfrQ3FqXThCrDWdKe0oR57HWBClcr1IqvqQZZUpL0sPX7gi5b\nBDso08aiWohYhZP82eimnCJWh3/xrjTZQCYWkf/AHPt6xND5SEqYDwfY/S3IMLx6\nGkYzqbTfZQKBgQCDM33hV/OPJLGS2hINM/MqVFwbo3NaOJHAd/t+steoqj2+p81r\ncNHy4WbDSFmS3jvvYFxMbwVrUooK6pF01bFgi77WkkNbsSoQRr59KEyQdufKy8Fp\nDHxXKwr7ToX3gRvvIs6HjY72y+6hjlusMttFx+aB6wxK8OBfbxu1IAmgSQKBgEG1\nfFsMiYptB6lHK2ICy7/B4ktWQ0kpkIzzTbkaylvjhIBX6cclHCfX3w5vKKjx0xG+\n8LWJo4wy/jTvDCUdoGoFKGUc2Tg2mkbI39wsl4PM9TCnPLVm/eXMNDuJE10Ddx3w\nR4suP6QSiVgApgoTPX7nKlipa9+9O2E1FKi3PpKNAoGBAJDdXRzZH6ppEyiqskqf\nxMZnQ1HfiU2c2eBLuHtYYM3YU8wFFErpqlgOlEa4abIbLOA53PWk4DCJyYFeTiy/\nTc7C2ngq8XNjh4uVeh6Qbw+o2USEakTfg2G0AT8qgXaskq98KUk+6LdVtZfXziP6\n/YMHdV0qNWAkADMuOvsLp4tq\n-----END PRIVATE KEY-----\n",
+  "client_email": "ecom-pipeline-sa@ecom-intelligence-pipeline-001.iam.gserviceaccount.com",
+  "client_id": "109592066791302354873",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ecom-pipeline-sa%40ecom-intelligence-pipeline-001.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

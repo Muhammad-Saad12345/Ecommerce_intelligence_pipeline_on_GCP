@@ -1,0 +1,129 @@
+[0m11:19:11.333241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002799627A1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002799736A010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002799736BE90>]}
+
+
+============================== 11:19:11.347633 | 95652231-188e-43f8-9046-38f3fc3381ad ==============================
+[0m11:19:11.347633 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:19:11.349649 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\KOS Knowledge\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:19:11.439143 [info ] [MainThread]: dbt version: 1.11.11
+[0m11:19:11.439143 [info ] [MainThread]: python version: 3.11.9
+[0m11:19:11.444000 [info ] [MainThread]: python path: C:\Users\KOS Knowledge\Desktop\ecommerce-intelligence-pipeline-main\venv\Scripts\python.exe
+[0m11:19:11.444000 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m11:19:14.022734 [info ] [MainThread]: Using profiles dir at C:\Users\KOS Knowledge\.dbt
+[0m11:19:14.024746 [info ] [MainThread]: Using profiles.yml file at C:\Users\KOS Knowledge\.dbt\profiles.yml
+[0m11:19:14.037214 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\KOS Knowledge\Desktop\ecommerce-intelligence-pipeline-main\dbt_project.yml
+[0m11:19:14.049338 [info ] [MainThread]: adapter type: bigquery
+[0m11:19:14.058612 [info ] [MainThread]: adapter version: 1.11.1
+[0m11:19:14.062153 [info ] [MainThread]: Configuration:
+[0m11:19:14.066370 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:19:14.067684 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m11:19:14.072040 [info ] [MainThread]: Required dependencies:
+[0m11:19:14.075280 [debug] [MainThread]: Executing "git --help"
+[0m11:19:14.183553 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:19:14.185960 [debug] [MainThread]: STDERR: "b''"
+[0m11:19:14.185960 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:19:14.185960 [info ] [MainThread]: Connection:
+[0m11:19:14.190327 [info ] [MainThread]:   method: oauth
+[0m11:19:14.192040 [info ] [MainThread]:   database: sales-intelligence-pipeline
+[0m11:19:14.192040 [info ] [MainThread]:   execution_project: sales-intelligence-pipeline
+[0m11:19:14.192040 [info ] [MainThread]:   schema: rmi_bronze
+[0m11:19:14.192040 [info ] [MainThread]:   location: US
+[0m11:19:14.192040 [info ] [MainThread]:   priority: interactive
+[0m11:19:14.198659 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m11:19:14.198659 [info ] [MainThread]:   impersonate_service_account: None
+[0m11:19:14.202836 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m11:19:14.202836 [info ] [MainThread]:   job_retries: 1
+[0m11:19:14.202836 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m11:19:14.207132 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m11:19:14.209145 [info ] [MainThread]:   timeout_seconds: 300
+[0m11:19:14.212188 [info ] [MainThread]:   client_id: None
+[0m11:19:14.213480 [info ] [MainThread]:   token_uri: None
+[0m11:19:14.215250 [info ] [MainThread]:   compute_region: None
+[0m11:19:14.217520 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m11:19:14.217520 [info ] [MainThread]:   gcs_bucket: None
+[0m11:19:14.217520 [info ] [MainThread]:   dataproc_batch: None
+[0m11:19:14.223337 [info ] [MainThread]: Registered adapter: bigquery=1.11.1
+[0m11:19:15.921959 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m11:19:15.929344 [debug] [MainThread]: On debug: select 1 as id
+[0m11:19:15.929344 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:19:32.155587 [error] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=sales-intelligence-pipeline&j=bq:US:cca0e411-06ed-4306-9326-226dd6ebe3c0&page=queryresults
+[0m11:19:32.164425 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m11:19:32.169415 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m11:19:32.176170 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\KOS Knowledge\Desktop\ecommerce-intelligence-pipeline-main\dbt_project.yml> not found
+
+[0m11:19:32.182370 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Access Denied: Project sales-intelligence-pipeline: User does not have bigquery.jobs.create permission in project sales-intelligence-pipeline.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m11:19:32.195350 [debug] [MainThread]: Command `dbt debug` failed at 11:19:32.191359 after 21.15 seconds
+[0m11:19:32.202062 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:19:32.204654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002798F7FC790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027995FD8290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002798F52E550>]}
+[0m11:19:32.211253 [debug] [MainThread]: Flushing usage events
+[0m11:19:35.822205 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:02:57.750644 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1AA489ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1A939A510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1AA488C50>]}
+
+
+============================== 19:02:57.761709 | edde9159-bb2f-4522-a3c0-dc61c8a8511d ==============================
+[0m19:02:57.761709 [info ] [MainThread]: Running with dbt=1.11.11
+[0m19:02:57.767995 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\KOS Knowledge\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init ecom_pipeline', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m19:02:57.853831 [debug] [MainThread]: Starter project path: C:\Users\KOS Knowledge\Desktop\ecommerce-intelligence-pipeline-main\venv\Lib\site-packages\dbt\include\starter_project
+[0m19:02:58.029326 [info ] [MainThread]: 
+Your new dbt project "ecom_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:02:58.029326 [info ] [MainThread]: Setting up your profile.
+[0m19:12:45.366966 [info ] [MainThread]: Profile ecom_pipeline written to C:\Users\KOS Knowledge\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:12:45.545486 [debug] [MainThread]: Command `dbt init` succeeded at 19:12:45.530281 after 587.98 seconds
+[0m19:12:45.561355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1A28BC310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1AA489B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E1AA489C90>]}
+[0m19:12:45.588921 [debug] [MainThread]: Flushing usage events
+[0m19:12:53.787066 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:10:10.717544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F70DBD7A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F70DC62490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F70DBD7D90>]}
+
+
+============================== 20:10:10.729608 | 32eccea0-7684-4681-8f34-79896585d65b ==============================
+[0m20:10:10.729608 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:10:10.734013 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\KOS Knowledge\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt source freshness', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m20:10:10.734013 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\KOS Knowledge\Desktop\ecommerce-intelligence-pipeline-main\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:10:10.742433 [debug] [MainThread]: Command `dbt source freshness` failed at 20:10:10.740861 after 0.35 seconds
+[0m20:10:10.744446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F70DB35010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F70DBCB190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F70DBD7FD0>]}
+[0m20:10:10.746459 [debug] [MainThread]: Flushing usage events
+[0m20:10:13.909790 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:10:27.301192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E992E56C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E992E56090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E992E56D90>]}
+
+
+============================== 20:10:27.321952 | ca695dbd-8fb7-43d8-abcd-fb1fb1e45a30 ==============================
+[0m20:10:27.321952 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:10:27.325050 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\KOS Knowledge\\.dbt', 'invocation_command': 'dbt compile', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m20:10:27.330219 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\KOS Knowledge\Desktop\ecommerce-intelligence-pipeline-main\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:10:27.335397 [debug] [MainThread]: Command `dbt compile` failed at 20:10:27.335397 after 0.46 seconds
+[0m20:10:27.339703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E992EEA190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E992D9A050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E98C07E750>]}
+[0m20:10:27.339703 [debug] [MainThread]: Flushing usage events
+[0m20:10:29.782946 [debug] [MainThread]: An error was encountered while trying to flush usage events

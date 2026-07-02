@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card">
+    <h1 class="page-title">AI Chatbot</h1>
+    <p class="page-intro">
+      Ask the AI chatbot for help on data ingestion, pipeline health, or how to interpret your Looker Studio dashboards.
+    </p>
+
+    <div class="card" style="padding: 24px; margin-top: 24px;">
+      <p style="margin: 0 0 16px; color: #475569; line-height: 1.8;">
+        This placeholder page is ready for your next phase: connect an LLM backend or integrate a knowledge store.
+      </p>
+      <div style="display: grid; gap: 18px;">
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; padding: 18px; color: #475569;">
+          <strong>Example prompt:</strong>
+          <p style="margin: 10px 0 0;">
+            "What should I check if my order_items bronze table has missing freight_value?"
+          </p>
+        </div>
+
+        <div style="background: #eef2ff; border-radius: 16px; padding: 18px; color: #0f172a;">
+          <strong>Next step:</strong>
+          <p style="margin: 10px 0 0;">
+            Add a backend endpoint for chat requests and connect it to OpenAI, Vertex AI, or another conversational model.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

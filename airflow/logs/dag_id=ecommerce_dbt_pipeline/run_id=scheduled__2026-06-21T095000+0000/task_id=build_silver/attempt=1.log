@@ -1,0 +1,5 @@
+{"timestamp":"2026-06-21T09:51:40.143085Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-06-21T09:51:40.163337Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/ecom_pipeline_dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-06-21T09:51:41.125444Z","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook","filename":"subprocess.py","lineno":78}
+{"timestamp":"2026-06-21T09:51:41.162254Z","level":"info","event":"Running command: ['/usr/bin/bash', '-c', '\\n        cd /opt/airflow/dbt &&\\n        dbt build --select silver\\n        ']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook","filename":"subprocess.py","lineno":80}
+{"timestamp":"2026-06-21T09:51:41.280701Z","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook","filename":"subprocess.py","lineno":92}

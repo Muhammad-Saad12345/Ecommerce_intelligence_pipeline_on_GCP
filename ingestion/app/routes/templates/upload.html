@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card">
+    <h1 class="page-title">Upload Data</h1>
+    <p class="page-intro">
+      Upload Olist CSV files to run the ingestion pipeline. Valid data lands in the Bronze dataset and audit logs capture file status.
+    </p>
+
+    <div class="card" style="padding: 24px; margin-top: 24px;">
+      <form action="/upload-and-process" enctype="multipart/form-data" method="post">
+        <div class="form-group">
+          <label>Source System</label>
+          <input type="text" name="source_system" value="olist" readonly />
+        </div>
+
+        <div class="form-group">
+          <label>Table</label>
+          <select name="table_name" required>
+            {% for table in tables %}
+              <option value="{{ table }}">{{ table }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>CSV File</label>
+          <input type="file" name="file" accept=".csv" required />
+        </div>
+
+        <div class="form-group">
+          <p class="page-intro" style="margin: 0;">Maximum file size: {{ max_upload_size_mb }} MB.</p>
+        </div>
+
+        <button type="submit" class="primary-button">Upload and run pipeline</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card">
+    <h1 class="page-title">Pipeline Result</h1>
+    <p class="page-intro">
+      The upload result below reflects the pipeline status, data destination, and any validation details.
+    </p>
+
+    <div class="card" style="margin-top: 24px; padding: 20px; background: #f8fafc; border-color: #e2e8f0;">
+      <p><strong>Status:</strong> <span class="{{ status_class }}">{{ result.status }}</span></p>
+      {% if result.reason %}
+        <p><strong>Reason:</strong> {{ result.reason }}</p>
+      {% endif %}
+      {% if result.raw_gcs_uri %}
+        <p><strong>Raw file path:</strong> {{ result.raw_gcs_uri }}</p>
+      {% endif %}
+      {% if result.bronze_table %}
+        <p><strong>Bronze table:</strong> {{ result.bronze_table }}</p>
+      {% endif %}
+      {% if result.row_count is not none %}
+        <p><strong>Rows loaded:</strong> {{ result.row_count }}</p>
+      {% endif %}
+      {% if result.error %}
+        <div style="margin-top: 12px; padding: 16px; background: #fff1f2; border: 1px solid #fecaca; border-radius: 12px; color: #991b1b;">
+          <strong>Error:</strong>
+          <pre style="margin: 8px 0 0; white-space: pre-wrap; color: #991b1b;">{{ result.error }}</pre>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="hero-grid hero-grid--actions" style="margin-top: 24px;">
+      <a href="/upload" class="secondary-button">Upload another file</a>
+      <a href="/dashboard" class="secondary-button">View dashboard</a>
+    </div>
+  </div>
+{% endblock %}

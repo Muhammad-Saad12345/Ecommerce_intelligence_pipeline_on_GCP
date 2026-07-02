@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="card">
+    <h1 class="page-title">Welcome to the E-Commerce Intelligence Portal</h1>
+    <p class="page-intro">
+      This portal centralizes the ingestion and reporting workflow for the Olist dataset. Use the upload page to add new data,
+      the dashboard to explore Looker Studio reports, and the AI chatbot for intelligent guidance.
+    </p>
+
+    <div class="hero-grid hero-grid--actions">
+      <a href="/upload" class="primary-button">Upload Data</a>
+      <a href="/dashboard" class="secondary-button">View Dashboard</a>
+      <a href="/ai-chat" class="secondary-button">Open AI Chat</a>
+    </div>
+
+    <div class="card" style="margin-top: 28px; padding: 22px; background: #eff6ff; border-color: #dbeafe;">
+      <h2 style="margin-top: 0;">Pipeline overview</h2>
+      <ul style="margin: 12px 0 0 18px; color: #475569; line-height: 1.8;">
+        <li>Upload Olist CSV files via the portal</li>
+        <li>Files are validated and staged in the GCS tmp zone</li>
+        <li>Valid data is copied into raw/ and then Bronze BigQuery</li>
+        <li>Dashboard embeds capture key sales and pipeline health views</li>
+      </ul>
+    </div>
+  </div>
+{% endblock %}
