@@ -43,7 +43,7 @@ This platform solves those problems by creating a scalable and automated cloud-n
 
 # 🏗 High-Level Architecture
 
-D:\Data Engineer Projects\E-commerce Intelligence GCP project\Architecture Diagram.png
+![Architecture Diagram](Architecture Diagram.png)
 
 
 ---
@@ -87,9 +87,7 @@ ecommerce-intelligence-platform
 │
 ├── ingestion/
 │     ├── app/
-│     ├── validation/
-│     ├── templates/
-│     ├── static/
+│     ├── Dockerfile/
 │     └── requirements.txt
 │
 ├── ecom_pipeline/
@@ -478,29 +476,14 @@ The next planned enhancements include:
 
 ---
 
-# 📸 Project Screenshots
-
-Add screenshots here:
-
-- Upload UI
-- GCS Bucket Structure
-- BigQuery Datasets
-- Airflow DAG
-- dbt Lineage Graph
-- Looker Studio Dashboards
-- Cloud Monitoring Dashboard
-- Cloud Logging
-
----
-
 # 👨‍💻 Author
 
 **Muhammad Saad**
 
-Data Engineer | Google Cloud | BigQuery | dbt | Airflow | Python | SQL
+Data Engineer | Google Cloud | BigQuery | dbt | Airflow | Python | SQL 
 
 - GitHub: https://github.com/Muhammad-Saad12345
-- LinkedIn: *(Add your LinkedIn profile)*
+- LinkedIn: *https://www.linkedin.com/in/saad-yaqoob-05244726b/*
 
 ---
 
