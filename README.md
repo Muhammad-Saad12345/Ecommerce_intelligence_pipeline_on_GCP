@@ -326,6 +326,14 @@ Dashboard Updated
 
 The project includes interactive dashboards built with Looker Studio.
 
+Below are screenshots exported from the `dashboard/` folder:
+
+- ![Executive Overview](dashboard/Executive-overview.png)
+- ![Product Overview](dashboard/product-overview.png)
+- ![Pipeline Health](dashboard/pipeline-health.png)
+- ![Customer Intelligence](dashboard/customer-intelligence.png)
+- ![Sales Overview](dashboard/sales%20overview.jpeg)
+
 ### Executive Overview
 
 - Revenue KPIs
