@@ -88,7 +88,7 @@ ecommerce-intelligence-platform
 │
 ├── ingestion/
 │     ├── app/
-│     ├── Dockerfile/
+│     ├── Dockerfile
 │     └── requirements.txt
 │
 ├── ecom_pipeline/
@@ -385,9 +385,9 @@ Pipeline monitoring includes:
 
 Docker is used for
 
-- dbt Environment
-- Apache Airflow Environment
-- Local Development Consistency
+- dbt environment
+- Apache Airflow environment
+- Local development consistency
 
 ---
 
