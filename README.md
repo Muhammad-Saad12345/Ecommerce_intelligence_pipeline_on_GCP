@@ -334,7 +334,57 @@ Below are screenshots exported from the `dashboard/` folder:
 - ![Customer Intelligence](dashboard/customer-intelligence.png)
 - ![Sales Overview](dashboard/sales%20overview.jpeg)
 
+The project includes interactive dashboards built with Looker Studio.
+
+Below are screenshots exported from the `dashboard/` folder:
+
+- ![Product Overview](dashboard/product-overview.png)
+- ![Pipeline Health](dashboard/pipeline-health.png)
+- ![Customer Intelligence](dashboard/customer-intelligence.png)
+- ![Sales Overview](dashboard/sales%20overview.jpeg)
+
 ### Executive Overview
+### Executive Overview
+
+![Executive Overview](dashboard/Executive-overview.png)
+
+- Revenue KPIs
+- Orders
+- Customers
+- Pipeline Health
+
+### Sales Performance
+
+![Sales Overview](dashboard/sales%20overview.jpeg)
+
+- Revenue Trends
+- Monthly Sales
+- Order Status
+
+### Customer Intelligence
+
+![Customer Intelligence](dashboard/customer-intelligence.png)
+
+- Customer Distribution
+- Geographic Analysis
+- RFM Analysis
+
+### Product Performance
+
+![Product Overview](dashboard/product-overview.png)
+
+- Top Products
+- Seller Performance
+- Product Categories
+
+### Pipeline Health
+
+![Pipeline Health](dashboard/pipeline-health.png)
+
+- Upload Status
+- Failed Records
+- Data Quality Checks
+- Pipeline Runs
 
 - Revenue KPIs
 - Orders
