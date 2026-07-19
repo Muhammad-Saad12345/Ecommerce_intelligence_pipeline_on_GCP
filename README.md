@@ -116,82 +116,51 @@ ecommerce-intelligence-platform
 
 # 🔄 End-to-End Data Pipeline
 
-```
-CSV Upload
+# 📊 Dashboards
 
-↓
+The project includes interactive dashboards built with Looker Studio. Screenshots exported from the `dashboard/` folder are shown below and placed under their matching sections.
 
-Upload UI
+### Executive Overview
 
-↓
+![Executive Overview](dashboard/Executive-overview.png)
 
-Cloud Run
+- Revenue KPIs
+- Orders
+- Customers
+- Pipeline Health
 
-↓
+### Sales Performance
 
-Temporary Bucket
+![Sales Overview](dashboard/sales%20overview.jpeg)
 
-↓
+- Revenue Trends
+- Monthly Sales
+- Order Status
 
-Validation
+### Customer Intelligence
 
-↓
+![Customer Intelligence](dashboard/customer-intelligence.png)
 
-Schema Validation
+- Customer Distribution
+- Geographic Analysis
+- RFM Analysis
 
-↓
+### Product Performance
 
-Duplicate Detection
+![Product Overview](dashboard/product-overview.png)
 
-↓
+- Top Products
+- Seller Performance
+- Product Categories
 
-Raw Bucket
+### Pipeline Health
 
-↓
+![Pipeline Health](dashboard/pipeline-health.png)
 
-Rejected Bucket
-
-↓
-
-BigQuery Bronze
-
-↓
-
-Metadata & Audit Logs
-
-↓
-
-Apache Airflow
-
-↓
-
-dbt Silver
-
-↓
-
-dbt Tests
-
-↓
-
-dbt Gold
-
-↓
-
-dbt Tests
-
-↓
-
-Business Marts
-
-↓
-
-Looker Studio Dashboards
-
-↓
-
-Cloud Logging
-
-↓
+- Upload Status
+- Failed Records
+- Data Quality Checks
+- Pipeline Runs
 
 Cloud Monitoring
 ```
